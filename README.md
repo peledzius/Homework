@@ -9,7 +9,7 @@ Write a "proxy" program:
 * You are not allowed to lose any text;
 * Input side is very sensitive and must not notice any increase in latency (program cannot stall) when destination is unavailable. Reading must happen in stable 1s intervals regardless of availability of the destination;
 * You are not allowed to read entire file at once, you must check every line for a pattern before reading the next one;
-* You must write to the destination as often as possible (and as soon as it becomes available after interruption) in a sequence messages were read from source;;
+* You must write to the destination as often as possible (and as soon as it becomes available after interruption) in a sequence messages were read from source;
 * You do not have access to any local storage to use as a cache (program must do all its work in RAM);
 * Since latency is critical, your program has to be as resource-efficient as possible
 
